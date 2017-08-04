@@ -27,10 +27,12 @@ You must register a bitcoin address with the group before you can receive an HTT
 # New group registration URL
 
 POST https://coinsnotify.com/api/group/add
+
 Request example
 
 curl -d "group_name=$GROUP_NAME&callback_url=$CALLBACK_URL"
 https://coinsnotify.com/api/group/add
+
 Response example
 
 { 
@@ -44,10 +46,12 @@ An API that allows you to modify the group's HTTP Callback URL. You can not chan
 
 # Edit group URL
 POST https://coinsnotify.com/api/group/update
+
 Request example
 
 curl -d "group_name=$MY_GROUP_NAME&callback_url=$CALLBACK_URL"
 https://coinsnotify.com/api/group/update
+
 Response example
 
 { 
@@ -61,10 +65,12 @@ An API that allows you to delete a group. You can delete only when there is no r
 
 # Delete group URL
 POST https://coinsnotify.com/api/group/delete
+
 Request example
 
 curl -d "group_name=$MY_GROUP_NAME
 https://coinsnotify.com/api/group/delete
+
 Response example
 
 { 
@@ -78,9 +84,11 @@ API to view all group names.
 
 Group List URL
 GET https://coinsnotify.com/api/group/list
+
 Request example
 
 GET https://coinsnotify.com/api/group/list
+
 Response example
 
 { 
@@ -94,6 +102,7 @@ Response example
 # HTTP Callback
 
 When the bitcoin is deposited into the bitcoin address in the group, the callback is delivered to the HTTP Callback URL registered in the group. Confirmed means the number of bit coin confirms and passes callbacks from one to three conform. Value is bitcoin quantity, and the unit is Satoshi. Details about the bitcoin transaction can be found with txid.
+
 
 HTTP Callback Example
 
@@ -109,10 +118,12 @@ An API that allows you to register a bitcoin address in a group.
 
 Bitcoin address registration URL
 POST https://coinsnotify.com/api/address/add
+
 Request example
 
 curl -d "group_name=$MY_GROUP_NAME&address=$MY_ADDRESS"
 https://coinsnotify.com/api/address/add
+
 Response example
 
 { 
@@ -135,6 +146,7 @@ $ADDRESSES = urlencode('{
 
 curl -d group_name=$GROUP_NAME&addresses=$ADDRESSES
 https://coinsnotify.com/api/address/add
+
 Response example
 
 { 
@@ -151,10 +163,12 @@ An API that deletes registered bitcoin addresses in a group.
 
 Bit coin address removal URL
 POST https://coinsnotify.com/api/address/delete
+
 Request example
 
 curl -d "group_name=$MY_GROUP_NAME&address=$MY_ADDRESS"
 https://coinsnotify.com/api/address/delete
+
 Response example
 
 { 
@@ -168,9 +182,11 @@ An API that allows you to see a list of all addresses registered in the group.
 
 Address List URL
 GET https://coinsnotify.com/api/address/list
+
 Request example
 
 GET https://coinsnotify.com/api/address/list?group_name=$MY_GROUP_NAME
+
 Response example
 
 { 
