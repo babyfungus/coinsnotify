@@ -1,6 +1,9 @@
 # Coinsnotify
 Bitcoin notification API
 
+Coinsnotify is an alarm service when the deposit details of the coin deposit are confirmed.
+https://www.coinsnotify.com
+
 # API KEY
 
 Wherever you use the Coinsnotify API, you must use a Coinsnotify member ID for client_id and an API key for client_secret.
