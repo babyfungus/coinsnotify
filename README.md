@@ -131,7 +131,7 @@ Response example
     "address":"1B2L3cfm1CFH8cUB9BRKUs8zFGYEJLtWev" 
 }
 
-# Bitcoin Address Bulk Registration
+# Bitcoin Address Multiple Registration
 
 You can register multiple bitcoin addresses at once. If any of the addresses to be registered are already registered, the registration will be stopped. Up to 100 can be registered at one time.
 
