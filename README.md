@@ -1,7 +1,7 @@
 # Coinsnotify
 Bitcoin notification API
 
-Coinsnotify is an alarm service(email or HTTP) when the deposit details of the coin deposit are confirmed.
+Coinsnotify is an alarm service(email or HTTP) when the deposit details of Bitcoin deposit are confirmed.
 https://www.coinsnotify.com
 
 # API KEY
